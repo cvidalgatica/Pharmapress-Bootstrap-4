@@ -1,0 +1,32 @@
+.content__links{
+	a{
+		color: $beige;
+		font-size: $xs;
+		display: inline-block;
+		padding: $s;
+	}
+}
+
+.header__navbar{
+	background: $celeste;
+	ul li{
+		a{
+			color:white;
+			font-family: $myriad-pro-light;
+		}
+	}
+}
+.dropdown-menu{
+	border:none;
+	border-radius:0;
+	background-color: rgba(255,255,255,0.75);
+}
+.dropdown-item,
+.header__navbar ul li a.dropdown-item{
+	color:$celeste;
+	font-size:13px;
+	&:hover{
+		background:$celeste;
+		color: white;
+	}
+}
