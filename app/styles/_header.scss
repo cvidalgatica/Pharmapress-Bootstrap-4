@@ -16,6 +16,12 @@
 		}
 	}
 }
+.navbar-toggler{
+	background-color: white;
+	color: $celeste;
+	text-align:center;
+	cursor: pointer;
+}
 .dropdown-menu{
 	border:none;
 	border-radius:0;
