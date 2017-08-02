@@ -24,25 +24,26 @@
     <![endif]-->
     <header class="container">
         <div class="row justify-content-center justify-content-md-around">
-          <a id="header_logo" class="col-6 col-sm-4"><img class="img-fluid" src="../images/logo-press.png"></a>
-          
-          <div class="content content__links d-flex flex-column flex-md-row justify-content-around align-items-center flex-nowrap float-right beige hidden-sm-down col-sm-8">
-              <a href="http://pharmainvestichile.cl" target="_blank" class="content__links-link">Pharma Investi Chile</a>  
-              <a href="http://pharmapress.cl" target="_blank" class="content__links-link">PharmaPress</a>  
-              <a href="#" target="_blank" class="content__links-link">Intranet</a>  
-              <a href="http://phinvesti.cl" target="_blank" class="content__links-link">PharmaDocu</a>
-          </div>
+            <a id="header_logo" class="col-6 col-sm-4"><img class="img-fluid" src="https://pharmapress.cl/wpress/wp-content/themes/pharmapress_theme/img/logo-press.png"></a>
+            
+            <div class="content content__links d-flex flex-column flex-md-row justify-content-around align-items-center flex-nowrap float-right beige hidden-sm-down">
+                <a href="http://pharmainvestichile.cl" target="_blank" class="content__links-link">Pharma Investi Chile</a>  
+                <a href="http://pharmapress.cl" target="_blank" class="content__links-link">PharmaPress</a>  
+                <a href="#" target="_blank" class="content__links-link">Intranet</a>  
+                <a href="http://phinvesti.cl" target="_blank" class="content__links-link">PharmaDocu</a>
+            </div>
         </div>
-      
+      <div id="buscador">
+</div>
         <div class="clearfix"></div>
     
         <nav class="navbar navbar-toggleable-md header__navbar">
         
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuPrincipal" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa fa-bars" aria-hidden="true"></i>
-          </button>
+          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#menuPrincipal" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+           </button>
           
-          <div class="collapse navbar-collapse" id="menuPrincipal" aria-expanded="false">
+          <div class="navbar-collapse collapse" id="menuPrincipal" aria-expanded="false">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
                 <a class="nav-link" href="#">Inicio</a>
@@ -52,14 +53,14 @@
                   Sala de Prensa
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Actualidad</a>
-                  <a class="dropdown-item" href="#">Reportajes</a>
-                  <a class="dropdown-item" href="#">Entrevistas</a>
-                  <a class="dropdown-item" href="#">Comunicados corporativos</a>
-                  <a class="dropdown-item" href="#">Comunicados Área Terapéutica</a>
-                  <a class="dropdown-item" href="#">Comunicados Audiovisuales</a>
-                  <a class="dropdown-item" href="#">Recurso Documentación</a>
-                  <a class="dropdown-item" href="#">Multimedia</a>
+                  <a class="dropdown-item" href="/wpress/category/actualidad">Actualidad</a>
+                  <a class="dropdown-item" href="/wpress/category/reportajes">Reportajes</a>
+                  <a class="dropdown-item" href="/wpress/category/entrevistas">Entrevistas</a>
+                  <a class="dropdown-item" href="/wpress/category/comunicados_corporativos">Comunicados corporativos</a>
+                  <a class="dropdown-item" href="/wpress/category/comunicados_area_terapeutica">Comunicados Área Terapéutica</a>
+                  <a class="dropdown-item" href="/wpress/category/comunicados_audiovisuales">Comunicados Audiovisuales</a>
+                  <a class="dropdown-item" href="/wpress/category/recurso_documentacion">Recurso Documentación</a>
+                  <a class="dropdown-item" href="/wpress/category/multimedia">Multimedia</a>
                 </div>
               </li>
               <li class="nav-item dropdown">
@@ -67,8 +68,8 @@
                   Avances Científicos
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Entrevistas</a>
-                  <a class="dropdown-item" href="#">Nuevos Estudios</a>
+                  <a class="dropdown-item" href="/wpress/category/entrevistas">Entrevistas</a>
+                  <a class="dropdown-item" href="/wpress/category/nuevos_estudios">Nuevos Estudios</a>
                 </div>
               </li>
               <li class="nav-item dropdown">
@@ -76,9 +77,9 @@
                   RSE
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Acción Social</a>
-                  <a class="dropdown-item" href="#">Educación</a>
-                  <a class="dropdown-item" href="#">Pharma Investi en el arte</a>
+                  <a class="dropdown-item" href="/wpress/category/accion_social">Acción Social</a>
+                  <a class="dropdown-item" href="/wpress/category/educacion">Educación</a>
+                  <a class="dropdown-item" href="/wpress/category/pharma_investi_en_el_arte">Pharma Investi en el arte</a>
                 </div>
               </li>
               <li class="nav-item dropdown">
@@ -86,209 +87,127 @@
                   Biblioteca
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">News</a>
-                  <a class="dropdown-item" href="#">Documentos</a>
-                  <a class="dropdown-item" href="#">Publicaciones</a>
+                  <a class="dropdown-item" href="/wpress/category/nrews">News</a>
+                  <a class="dropdown-item" href="/wpress/category/documentos">Documentos</a>
+                  <a class="dropdown-item" href="/wpress/category/publicaciones">Publicaciones</a>
                 </div>
               </li>
               <li class="nav-item active">
                 <a class="nav-link" href="#">Contacto</a>
               </li>
             </ul>
+            <div class="content content__links d-flex flex-column justify-content-around align-items-center flex-nowrap beige hidden-md-up">
+                <a href="http://pharmainvestichile.cl" target="_blank" class="content__links-link">Pharma Investi Chile</a>  
+                <a href="http://pharmapress.cl" target="_blank" class="content__links-link">PharmaPress</a>  
+                <a href="#" target="_blank" class="content__links-link">Intranet</a>  
+                <a href="http://phinvesti.cl" target="_blank" class="content__links-link">PharmaDocu</a>
+            </div>
           </div>
         </nav>
         
     </header>
 
-    <section class="container section__index">
 
-            <div class="col align-self-end">
-                <h3 class="text-right celeste">Bienvenidos a PharmaPress <date>lunes 24 de julio de 2017</date></h3>
-            </div>        
-        
-        <div class="row row__noticias">
-            <article class="row__noticias-article article__principal col-12 col-md-9">
-                <figure>
-                    <img class="img-fluid" src="https://rubico.org/wp-content/uploads/2017/04/santiago.jpg" />
-                </figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="container single">
+    <div class="container__div row">
+    
+        <article class="article__news col-sm-9" itemscope="" itemtype="http://schema.org/NewsArticle">
+            <h4 class="article__date" itemprop="datePublished">Julio 30, 2017</h4>
             
-                <div class="article__caption">
-                    <h5 class="article__category">Categoría</h5>
-                    <h2 class="article__headline">Título de la noticia</h2>
-                    <h3 class="article__subhead">Bajada de título</h3>
-                    <p class="article__lead">Generalmente cuando hago las traducciones para el blog o leo artículos interesantes en inglés que dan vueltas por la red  me pasa que no entiendo la terminología usada, en especial cuando el tópico es periodismo/periodistas/medios.</p>
-                </div>
+            <h1 class="article__main-title" itemprop="headline">Radiografía a los aportes estatales que han recibido los partidos en 2017</h1>
             
-            </article>
-            <div class="article__secondary hidden-sm-down col-12 col-md-3">
-                <article class="row__noticias-article">
-                  <figure>
-                      <img class="img-fluid" src="https://rubico.org/wp-content/uploads/2017/04/santiago.jpg" />
-                  </figure>
+            <h3 class="article__lead">En lo que va del año se han repartido $ 3 mil millones entre los 33 partidos aprobados por el Servel. La UDI lidera la lista con el mayor monto de ingresos.</h3>            
+            
+            <div class="row">
+                <div class="col-sm-6">
+                    <h4 class="article__author">Por: <span itemprop="author">Cristián Vidal </span></h4>
+                </div>
                 
-                    <div class="article__caption">
-                        <h5 class="article__category">Categoría</h5>
-                        <h2 class="article__headline">Título de la noticia</h2>
-                        <h3 class="article__subhead">Bajada de título</h3>
-                        <p class="article__lead">Generalmente cuando hago las traducciones para el blog.</p>
-                    </div>
-                
-                </article>
-                <article class="row__noticias-article">
-                  <figure>
-                      <img class="img-fluid" src="https://rubico.org/wp-content/uploads/2017/04/santiago.jpg" />
-                  </figure>
-                
-                    <div class="article__caption">
-                        <h5 class="article__category">Categoría</h5>
-                        <h2 class="article__headline">Título de la noticia</h2>
-                        <h3 class="article__subhead">Bajada de título</h3>
-                        <p class="article__lead">Generalmente cuando hago las traducciones para el blog.</p>
-                    </div>
-                
-                </article>
-                <article class="row__noticias-article">
-                  <figure>
-                      <img class="img-fluid" src="https://rubico.org/wp-content/uploads/2017/04/santiago.jpg" />
-                  </figure>
-                
-                    <div class="article__caption">
-                        <h5 class="article__category">Categoría</h5>
-                        <h2 class="article__headline">Título de la noticia</h2>
-                        <h3 class="article__subhead">Bajada de título</h3>
-                        <p class="article__lead">Generalmente cuando hago las traducciones para el blog.</p>
-                    </div>
-                
-                </article>
+                <div class="col-sm-6">
+                    <h4 class="article__main-category">Categoría: <span itemprop="headline"><ul class="post-categories">
+  <li><a href="https://pharmapress.cl/wpress/category/actualidad/" rel="category tag">Actualidad</a></li></ul></span></h4>
+                </div>
             </div>
-        </div>
-        
-        <div class="row row__secondary">
-            <div class="col-md-9 col__secondary-left">
-                <!-- Sala de prensa -->
-                <h2 class="row__secondary-title">Sala de prensa</h2>
-                <div class="row row__sala">
-                    <article class="col-sm-6 row__sala-article">
-                        <figure>
-                            <img class="img-fluid" src="https://rubico.org/wp-content/uploads/2017/04/santiago.jpg" />
-                            <div class="article__caption">
-                                <h5 class="article__category">Categoría</h5>
-                            </div>
-                        </figure>
-                        <h3 class="article__headline">Premio Distinguido 2014</h3>
-                        <p class="article__lead">Generalmente cuando hago las traducciones para el blog.</p>
-
-                        <a href="#" class="ver-mas"><i class="fa fa-angle-right" aria-hidden="true"></i> Ver más <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                    </article>
-                    <article class="col-sm-6 row__sala-article">
-                        <figure>
-                            <img class="img-fluid" src="https://rubico.org/wp-content/uploads/2017/04/santiago.jpg" />
-                            <div class="article__caption">
-                                <h5 class="article__category">Categoría</h5>
-                            </div>
-                        </figure>
-                        <h3 class="article__headline">Premio Distinguido 2014</h3>
-                        <p class="article__lead">Generalmente cuando hago las traducciones para el blog.</p>
-
-                        <a href="#" class="ver-mas"><i class="fa fa-angle-right" aria-hidden="true"></i> Ver más <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                    </article>
-                </div>
-
-                <hr>
-                <!-- Avances científicos -->
-                <h2 class="row__secondary-title">Avances científicos</h2>
-                <div class="row row__avances">
-                    <article class="col-sm-6 row__sala-article">
-                        <figure>
-                            <img class="img-fluid" src="https://rubico.org/wp-content/uploads/2017/04/santiago.jpg" />
-                            <div class="article__caption">
-                                <h5 class="article__category">Categoría</h5>
-                            </div>
-                        </figure>
-                        <h3 class="article__headline">Premio Distinguido 2014</h3>
-                        <p class="article__lead">Generalmente cuando hago las traducciones para el blog.</p>
-
-                        <a href="#" class="ver-mas"><i class="fa fa-angle-right" aria-hidden="true"></i> Ver más <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                    </article>
-                    <article class="col-sm-6 row__sala-article">
-                        <figure>
-                            <img class="img-fluid" src="https://rubico.org/wp-content/uploads/2017/04/santiago.jpg" />
-                            <div class="article__caption">
-                                <h5 class="article__category">Categoría</h5>
-                            </div>
-                        </figure>
-                        <h3 class="article__headline">Premio Distinguido 2014</h3>
-                        <p class="article__lead">Generalmente cuando hago las traducciones para el blog.</p>
-
-                        <a href="#" class="ver-mas"><i class="fa fa-angle-right" aria-hidden="true"></i> Ver más <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                    </article>
-                </div>
-                <!-- Biblioteca / news -->
-                <h2 class="row__secondary-title">Biblioteca</h2>
-                <div class="row row__bibl-news">
-                    <div class="row__bibl col-md-6">
-                      <a href="#" class="row__bibl-doc">
-                        Documentos
-                      </a>
-                      <a href="#" class="row__bibl-pub">
-                        Publicaciones
-                      </a>
-                    </div>
-                    <div class="row row__news col-md-6">
-                      <a href="#" class="row__news-left">
-                        <img src="https://d2slcw3kip6qmk.cloudfront.net/marketing/press/images/template-gallery/newsletter-classroom@2x.jpeg" class="img-fluid">
-                      </a>
-                      <a href="#" class="row__news-right">
-                        <h2 class="row__secondary-title">News</h2>
-                        <h5>Descarga revista mensual</h5>
-                        <div class="ver-mas"><i class="fa fa-angle-right" aria-hidden="true"></i> Ver más <i class="fa fa-angle-right" aria-hidden="true"></i></div>
-                      </a>
-                    </div>
-                </div>
-                
-                
+    
+            <hr>
+            
+            <div class="article__content" itemprop="articleBody">
+                <p>Antes del martes 31 de julio, los partidos constituidos y que no fueron disueltos por el Servicio Electoral (Servel) tras el proceso de refichaje, recibirán la tercera cuota del aporte estatal que permite la nueva normativa que rige su funcionamiento, y que determina un desembolso de cuatro pagos al año.</p>
+<p>Según registros oficiales, hasta el día de hoy los 33 partidos aprobados por el Servel han recibido durante 2017 la cifra de $ 3.087.402.053.</p>
+<p>La UDI lidera la lista con el monto ya ingresado a sus contabilidades de $ 622 millones, recibidos en dos pagos de $311 millones cada uno: el primero en enero y el segundo en abril. Los partidos más pequeños y recién constituidos, en tanto, han ingresado el monto más bajo de solo $ 2,5 millones cada uno (ver infografía).</p>
+<p>En total el aporte 2017 a repartir entre los partidos asciende a la suma exacta de $ 6.339.676.012.</p>
+<p>Este cálculo se hizo -según determinó la nueva ley- basado en los votos de la elección de diputados de 2013, es decir, en base a 6.013.588 votos valorados en 0,04% UF, fijada para estos efectos en $ 26.355, correspondiente al 9 de enero de 2017. Y según la ecuación, el Estado está pagando por cada uno de esos votos de 2013 la cifra de $ 1.054 (y fracción) a cada partido inscrito.</p>
+<h2><strong>Gastos presidenciales</strong></h2>
+<p>Los partidos tienen márgenes bien definidos para utilizar los recursos públicos e informar la correcta utilización de dichos fondos. Aunque no pueden ser utilizados para campaña, sí pueden incurrir en financiamiento de actividades para difundir ideas y preparación de candidatos a cargos de elección popular. Es en dicho contexto que varios de ellos han destinado recursos en actividades propias de la instalación de candidaturas presidenciales, sin ser, necesariamente, gastos de campaña.</p>
             </div>
-            <div class="col-md-3 col__secondary-right">
-                <!-- Agenda -->
-                <div class="col__secondary-agenda">
-                  <h2 class="row__secondary-title">Agenda</h2>
-                  <a href="#" class="row agenda__item">
-                    <div class="col-sm-2 agenda__item-date"><date>07 junio</date></div>
-                    <div class="col-sm-8 agenda__item-title">Glaucoma visión</div>
-                    <div class="col-sm-2 agenda__item-arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
-                  </a>
-                  <a href="#" class="row agenda__item">
-                    <div class="col-sm-2 agenda__item-date"><date>07 junio</date></div>
-                    <div class="col-sm-8 agenda__item-title">Glaucoma visión</div>
-                    <div class="col-sm-2 agenda__item-arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
-                  </a>
-                  <a href="#" class="row agenda__item">
-                    <div class="col-sm-2 agenda__item-date"><date>07 junio</date></div>
-                    <div class="col-sm-8 agenda__item-title">Glaucoma visión</div>
-                    <div class="col-sm-2 agenda__item-arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
-                  </a>
-                </div>
-                <div class="clearfix"></div>
-
-                <h2 class="row__secondary-title">RSE</h2>
-                <article class="row__noticias-article rse__article">
-                    <figure>
-                        <img class="img-fluid" src="https://rubico.org/wp-content/uploads/2017/04/santiago.jpg">
-                    </figure>
-                
-                    <div class="article__caption">
-                        <p class="article__lead">Generalmente cuando hago las traducciones para el blog o leo artículos interesantes en inglés que dan vueltas por la red  me pasa que no entiendo la terminología usada.</p>
-                        <h5 class="article__category">Categoría</h5>
-                        <h2 class="article__headline">Título de la noticia</h2>
-                    </div>
-                
-                </article>
-
-            </div>
-        </div>
+            
+            <hr>
+            
+        </article>
         
+        <aside class="aside__content col-sm-3">
+            <h3>Noticias recientes de 
+            Actualidad :</h3>
+            
+            <ul class="recent__news"> 
+                                       
+                      
+                    <li><a href="https://pharmapress.cl/wpress/sala_de_prensa/radiografia-los-aportes-estatales-recibido-los-partidos-2017/">Radiografía a los aportes estatales que han recibido los partidos en 2017</a></li>               
+                
+               
+                      
+                    <li><a href="https://pharmapress.cl/wpress/sala_de_prensa/segun-mick-jagger-no-gano-peso-moves-like-jagger/">Según Mick Jagger, no ganó ni un peso por “Moves like Jagger”</a></li>               
+                
+                
+            </ul>
+            
+        </aside>
         
-    </section>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <footer class="container">
       <div class="row">
