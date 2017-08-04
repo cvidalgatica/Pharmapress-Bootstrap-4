@@ -126,6 +126,10 @@ article{
 			@include media-breakpoint-up(xl){
 				font-size: $xl;
 			}
+			a{
+				color: white;
+				text-decoration: none;
+			}
 		} 
 		.article__subhead{
 			display: none;
