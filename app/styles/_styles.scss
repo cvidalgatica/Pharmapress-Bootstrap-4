@@ -34,21 +34,39 @@ section{padding-top:15px; padding-bottom:15px;}
 //texto
 h1{
 	font-size:$xl;
+	@include media-breakpoint-down(lg){
+		font-size:$l;
+	}
 }
 h2{
 	font-size:$l;
+	@include media-breakpoint-down(lg){
+		font-size:$m;
+	}
 }
 h3{
 	font-size:$m;
+	@include media-breakpoint-down(lg){
+		font-size:$s;
+	}
 }
 h4{
 	font-size:$s;
+	@include media-breakpoint-down(lg){
+		font-size:$xs;
+	}
 }
 h5{
 	font-size:$xs;
+	@include media-breakpoint-down(lg){
+		font-size:$xxs;
+	}
 }
 h6{
 	font-size:$xxs;
+	@include media-breakpoint-down(lg){
+		font-size:8px;
+	}
 }
 h1, h2, h3, h4, h5, h6{
 	padding:1em 0;
@@ -99,8 +117,15 @@ article{
 	max-height: 530px;
 	height:100%;
 	overflow: hidden;
+	@include media-breakpoint-down(md){
+		max-height: none;
+	}
 	.article__caption{
 		width: calc(100% - 30px);
+		@include media-breakpoint-down(md){
+			position:relative;
+			width: 100%;
+		}
 	}
 }
 .article__caption{
@@ -152,6 +177,9 @@ article{
 }
 .row__noticias-article .article__headline{
 	font-size: $xxl;
+	a{
+		color: white;
+	}
 }
 .row__sala-article{
 	.article__headline{
