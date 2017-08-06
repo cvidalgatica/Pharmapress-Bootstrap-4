@@ -100,6 +100,21 @@ article{
 	background: $celeste-claro;
 	margin-bottom: 45px;
 }
+
+.carousel-fade {
+	.carousel-item {
+		display: block;
+		position: absolute;
+		opacity: 0;
+		transition: opacity .75s ease-in-out;
+		top: 0;
+		left: 0;
+		&.active {
+			opacity: 1;
+		}
+	}
+}
+
 .row__noticias-article{
 	position:relative;
 	margin-bottom:15px;
@@ -147,9 +162,10 @@ article{
 .article__secondary{
 	.article__caption{
 		.article__headline{
-			font-size: $l;
+			font-size: $m;
+			font-family: $helvetica-light;
 			@include media-breakpoint-up(xl){
-				font-size: $xl;
+				font-size: $l;
 			}
 			a{
 				color: white;
@@ -171,12 +187,16 @@ article{
 		}
 	}
 }
+.carousel-indicators > li{
+	list-style:none;
+}
 .article__headline{
 	font-family: $helvetica-black;
 	letter-spacing: 0.5px;
 }
 .row__noticias-article .article__headline{
 	font-size: $xxl;
+	margin-bottom:15px;
 	a{
 		color: white;
 	}
