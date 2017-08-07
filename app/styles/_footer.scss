@@ -1,12 +1,19 @@
 footer{
 	background: $celeste;
 	color:white;
-	& a{
+	a{
 		display: block;
 		color: white;
 		&:hover{
 			text-decoration: none;
 			border-bottom: 1px solid #EEE;
 		}
+	}
+	#footer__logo{
+		display: block;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
 	}
 }
