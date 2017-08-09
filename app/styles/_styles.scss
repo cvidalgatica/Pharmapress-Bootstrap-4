@@ -113,6 +113,7 @@ article{
 	height: calc(33.33% - 15px);
 	opacity:0.75;
 	cursor:pointer;
+	overflow:hidden;
 	&.active,
 	&:hover{
 		opacity: 1;
@@ -124,9 +125,28 @@ article{
 	figure{
 		margin-bottom: 0;
 		height:100%;
+		position:relative;
+		display: flex;
 		img{
-			min-height: 100%;
+			display: block;
+			position:absolute;				
+			//height: 100%;
 			width: auto;
+			top:0;
+			left:0;
+			max-width: none;
+			min-width: 100%;
+			min-height: 100%;
+			@include media-breakpoint-up(lg){
+				position:absolute;				
+				height: 100%;
+				width: auto;
+				top:0;
+				left:0;
+				max-width: none;
+				min-width: 100%;
+				min-height: 100%;
+			}
 		}
 	}
 }
@@ -135,13 +155,20 @@ article{
 	min-height: 530px;
 	overflow: hidden;
 	//position: initial;
+	@include media-breakpoint-down(sm){
+		height: 250px;
+		max-height: 250px;
+		min-height: 0;
+	}
 	@include media-breakpoint-down(md){
-		height: auto;
+		height: 400px;
+		max-height: 400px;
+		min-height: 0;
 	}
 	.article__caption{
 		//width: calc(100% - 30px);
 		@include media-breakpoint-down(md){
-			position:relative;
+			//position:relative;
 			width: 100%;
 		}
 	}
@@ -160,13 +187,14 @@ article{
 	}
 	p{
 		margin-bottom: 0;
+		color: white;
 	}
 }
 .article__secondary{
 	.article__caption{
 		.article__headline{
 			font-size: $m;
-			font-family: $helvetica-light;
+			font-family: $helvetica-black;
 			@include media-breakpoint-up(xl){
 				font-size: $l;
 			}
@@ -190,16 +218,19 @@ article{
 		}
 	}
 }
-.carousel-indicators > li{
-	list-style:none;
-	position:relative;
+.carousel-indicators {
+	margin:0; 
+	li{
+		list-style:none;
+		position:relative;
+	}
 }
 .article__headline{
 	font-family: $helvetica-black;
 	letter-spacing: 0.5px;
 }
 .row__noticias-article .article__headline{
-	font-size: $xxl;
+	font-size: $xl;
 	margin-bottom:15px;
 	a{
 		color: white;
@@ -269,15 +300,16 @@ article{
 		font-size: $l;
 		color:$gris-medio;
 		padding:0;
-		margin:0;
+		margin:0 0 15px;
 	}
 	.article__lead{
 		color:$celeste;
 	}
 	figure{
 		overflow: hidden;
+		max-height: 110px;
 		@include media-breakpoint-up(lg){
-			max-height: 110px;
+			//max-height: 110px;
 		}
 		.article__caption{
 			padding:$xs $xxs;
@@ -289,7 +321,7 @@ article{
 }
 .article__category{
 	text-transform:uppercase;
-	font-size: $m;
+	font-size: $s;
 	letter-spacing: 0.5px;
 }
 .article__lead{
@@ -303,6 +335,11 @@ article{
 }
 .row__bibl{
 	display:flex;
+}
+.row__news{
+	@include media-breakpoint-down(sm){
+		margin: 15px;
+	}
 }
 .row__bibl-doc,
 .row__bibl-pub,
@@ -372,6 +409,20 @@ article{
 .rse__article{
 	min-height:394px;
 	position:relative;
+	display:flex;
+	figure{
+		height: 100%;
+		width: 100%;
+		display: block;
+		margin: 0;
+		img{
+			display: block;
+		    min-height: 100%;
+		    min-width: 100%;
+		    height: 100%;
+		    max-width: none;
+		}
+	}
 	.article__lead{
 		margin-bottom: 15px;
 		font-size:$s;
@@ -438,9 +489,9 @@ article{
 	font-size:$xxl;
 }
 .article__lead{
-	font-family:$myriad-pro-reg;
+	//font-family:$myriad-pro-reg;
 	color:$gris-medio;
-	font-size:$l;
+	font-size:$s;
 }
 .post-categories{
 	padding:0;
