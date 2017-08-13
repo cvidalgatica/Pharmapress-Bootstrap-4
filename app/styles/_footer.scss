@@ -1,9 +1,12 @@
 footer{
 	background: $celeste;
 	color:white;
+	padding-top:15px;
+	padding-bottom:15px;
 	a{
 		display: block;
 		color: white;
+		font-size: 12px;
 		&:hover{
 			text-decoration: none;
 			border-bottom: 1px solid #EEE;
