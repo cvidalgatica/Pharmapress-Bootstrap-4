@@ -1,0 +1,23 @@
+	@supports (-webkit-text-size-adjust:none) and (not (-ms-accelerator:true)) {
+    	.row__noticias-article{
+    		height: 167px;  
+    	}
+	}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+    /* Solo para Safari */
+    ::i-block-chrome,.row__noticias-article{
+    	height: 167px;
+    }
+}
+/*
+body:first-of-type .row__noticias-article{
+	height:167px;
+}*/
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.row__noticias-article{
+    	height: 167px;
+    }
+}*/
+

@@ -4,6 +4,11 @@
 // endbower
 @import "fonts";
 @import "variables";
+
+// soporte para distintos navegadores
+@import "safari";
+
+// estilos del sitio
 @import "header";
 @import "footer";
 @import "modal";
