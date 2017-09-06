@@ -1,5 +1,10 @@
 .content__links{
 	background: white;
+	.content__rrss{
+		a{
+			font-size: $l;
+		}
+	}
 	a{
 		color: $beige;
 		font-size: $xs;
