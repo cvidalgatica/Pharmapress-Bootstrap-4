@@ -1,8 +1,18 @@
+#header_logo{
+	max-width:320px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
 .content__links{
 	background: white;
 	.content__rrss{
 		a{
 			font-size: $l;
+			&:hover{
+				color:$azul-oscuro;
+			}
 		}
 	}
 	a{
